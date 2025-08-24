@@ -23,6 +23,8 @@ Hoobs and Homebridge plugin for Tuya devices using a cloud Tuya Web Api.
 
 This plugin is based on the Home Assistant Tuya integration that implements a special Tuya Home Assistant API.
 
+**Compatible with Homebridge v1.x and v2.x**
+
 See [Home Assistant Tuya integration](https://www.home-assistant.io/components/tuya/) and [Tuyaha python library](https://github.com/PaulAnnekov/tuyaha).
 
 ## Features
