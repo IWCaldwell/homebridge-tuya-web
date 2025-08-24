@@ -1,6 +1,6 @@
 {
   "displayName": "TuyaWebPlatform",
-  "name": "@milo526/homebridge-tuya-web",
+  "name": "homebridge-tuya-web",
   "version": "1.2.0",
   "description": "Homebridge plugin for use with Tuya devices (uses Home Assistant Tuya Web API)",
   "main": "dist/src/index.js",
