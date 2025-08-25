@@ -1,11 +1,11 @@
 {
   "displayName": "TuyaWebPlatform",
-  "name": "homebridge-tuya-web",
-  "version": "1.2.0",
+  "name": "@milo526/homebridge-tuya-web",
+  "version": "1.2.1",
   "description": "Homebridge plugin for use with Tuya devices (uses Home Assistant Tuya Web API)",
   "main": "dist/src/index.js",
   "scripts": {
-    "build": "rimraf ./dist && tsc",
+    "build": "rm -rf ./dist && tsc",
     "lint": "eslint **/src/**/*.ts",
     "prepublishOnly": "npm run lint && npm run build",
     "prettier": "prettier --check .",
@@ -20,7 +20,10 @@
     "tuya",
     "smartlife",
     "tuyawebplatform",
-    "tuyaweb"
+    "tuyaweb",
+    "homekit",
+    "smart-home",
+    "iot"
   ],
   "author": "Milo Cesar <milocesar1@gmail.com>",
   "license": "MIT",
@@ -28,7 +31,7 @@
     "access": "public"
   },
   "engines": {
-    "node": ">=16.20.0",
+    "node": ">=18.17.0",
     "homebridge": ">=1.6.0"
   },
   "funding": {
@@ -49,7 +52,7 @@
   "devDependencies": {
     "@types/lodash.debounce": "^4.0.9",
     "@types/mocha": "^10.0.10",
-    "@types/node": "^18.19.68",
+    "@types/node": "^20.17.9",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
     "chai": "^4.5.0",

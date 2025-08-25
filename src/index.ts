@@ -9,3 +9,7 @@ import { TuyaWebPlatform } from "./platform";
 export default (api: API) => {
   api.registerPlatform(PLUGIN_NAME, PLATFORM_NAME, TuyaWebPlatform);
 };
+
+// Export plugin information for Homebridge v2 compatibility
+export const pluginName = PLUGIN_NAME;
+export const platformName = PLATFORM_NAME;

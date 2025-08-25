@@ -6,6 +6,8 @@
   "customUiPath": "",
   "headerDisplay": "Homebridge plugin for devices using the Tuya Web API.",
   "footerDisplay": "If you have any suggestions, please open an issue on [GitHub](https://github.com/milo526/homebridge-tuya-web/issues).",
+  "pluginVersion": ">=1.2.0",
+  "homebridgeVersion": ">=1.6.0",
   "schema": {
     "type": "object",
     "properties": {

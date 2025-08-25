@@ -23,7 +23,8 @@ Hoobs and Homebridge plugin for Tuya devices using a cloud Tuya Web Api.
 
 This plugin is based on the Home Assistant Tuya integration that implements a special Tuya Home Assistant API.
 
-**Compatible with Homebridge v1.x and v2.x**
+**Compatible with Homebridge v1.x and v2.x**  
+**Requires Node.js 18.17.0 or later**
 
 See [Home Assistant Tuya integration](https://www.home-assistant.io/components/tuya/) and [Tuyaha python library](https://github.com/PaulAnnekov/tuyaha).
 
@@ -31,11 +32,16 @@ See [Home Assistant Tuya integration](https://www.home-assistant.io/components/t
 
 This plugin implements the following features:
 
+- **Full Homebridge v2 Support**: Optimized for both Homebridge v1.x and v2.x with modern Node.js compatibility
 - Controlling Tuya Wi-Fi enabled devices from within HomeKit enabled iOS Apps.
 - Uses simple and lightweight Cloud Web API to control and get state update from Tuya devices. You will need a stable internet connection to control the devices.
 - Device State Caching. State of devices is cached in memory, every time a HomeKit app request status updates from the devices this results in a very fast and responsive response. There can be a latency in updates when a device is controlled from an App/Hub/Controller other than HomeKit, e.g. from the Tuya Android/iOS App.
 
 ## Installation
+
+**Requirements:**
+- Node.js 18.17.0 or later
+- Homebridge 1.6.0 or later
 
 ```
 npm i -g @milo526/homebridge-tuya-web

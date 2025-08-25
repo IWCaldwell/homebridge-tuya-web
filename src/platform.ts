@@ -44,9 +44,9 @@ export type HomebridgeAccessory = PlatformAccessory<
  * parse the user config and discover/register accessories with Homebridge.
  */
 export class TuyaWebPlatform implements DynamicPlatformPlugin {
-  public readonly Service: typeof Service = this.api.hap.Service;
+  public readonly Service: typeof Service = (this.api.hap as any).Service;
   public readonly Characteristic: typeof Characteristic =
-    this.api.hap.Characteristic;
+    (this.api.hap as any).Characteristic;
 
   // this is used to track restored cached accessories
   public readonly accessories = new Map<string, HomebridgeAccessory>();

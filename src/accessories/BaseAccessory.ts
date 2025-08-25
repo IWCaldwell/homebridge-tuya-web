@@ -205,7 +205,7 @@ export abstract class BaseAccessory {
       (gc) => gc.HomekitCharacteristic(this).UUID,
     );
 
-    this.service?.characteristics?.forEach((char) => {
+    this.service?.characteristics?.forEach((char: Characteristic) => {
       if (!homekitCharacteristics.includes(char.UUID)) {
         this.debug(`Characteristic ${char.displayName} not supported`);
         this.service?.removeCharacteristic(char);
@@ -225,7 +225,7 @@ export abstract class BaseAccessory {
         this.info(
           `Removing superfluous service: ${
             service.displayName
-          } (${service.characteristics.map((c) => c.displayName).join(", ")})`,
+          } (${service.characteristics.map((c: Characteristic) => c.displayName).join(", ")})`,
         );
         outdatedServices.push(service);
       }
